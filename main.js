@@ -12,7 +12,8 @@ Vue.createApp({
         getHeaderData()
         {
           axios
-            .get(apiUrl+"users/1")
+            .get("https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/header.js"
+                )
             .then((res) => {              
               this.header = res.data;
               this.getArticles();
