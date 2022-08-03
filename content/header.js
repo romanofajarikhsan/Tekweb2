@@ -1,27 +1,21 @@
-Vue.createApp({
-    data() {
-      return {
-        message: "Hello Vue!",
-        header: {},
-      };
-    },
-    methods: {
-      getHeaderData()
-      {
-        axios
-          .get(
-            "https://raw.githubusercontent.com/faridsurya/Vue-Axios-Basic/master/contents/header.json"
-          )
-          .then((res) => {
-            console.log(res.data);
-            this.header = res.data;
-          })
-          .catch((error) => {
-            console.log(error);
-          });
+{
+    "title": "Farid Surya",
+    "description":
+      "Ini adalah tempat saya untuk berbagi segala pengetahuan yang saya peroleh tentang koding dan teknologi.",
+    "social": {
+      "ig": {
+        "url": "https://instagram.com/fareedsurya",
+        "title": "fareedsurya"
+      },
+      "fb": {
+        "url": "https://web.facebook.com/fareed.frenologica/",
+        "title": "Farid Suryanto"
+      },
+      "yt": {
+        "url": "https://www.youtube.com/channel/UC8GBH6hewlRM1q252mSMyXg",
+        "title": "Farid Surya"
       }
     },
-    beforeMount() {
-      this.getHeaderData()
-    },
-  }).mount("#app");
+    "imageProfile":
+      "https://raw.githubusercontent.com/faridsurya/Vue-Axios-Basic/master/images/farid_1_remove_bg.png"
+  }
