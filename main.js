@@ -26,7 +26,7 @@ Vue.createApp({
         {
             axios
             .get(
-              "https://raw.githubusercontent.com/faridsurya/Vue-Axios-Basic/master/contents/articles.json"
+              "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/articles.js"
             )
             .then((res) => {              
               this.articles = res.data;
