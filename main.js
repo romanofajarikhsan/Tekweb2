@@ -9,18 +9,21 @@ Vue.createApp({
       };
     },
     methods:{    
-        getHeaderData()
-        {
-          axios
-            .get("https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/header.js"
-                )
-            .then((res) => {              
-              this.header = res.data;
-            })
+       getHeaderData()
+    {
+      axios
+        .get(
+           "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/header.js"
+         )
+         .then((res) => {
+          console.log(res.data); //melihat respon data pada console browser
+          this.header = res.data;
+         })
             .catch((error) => {
-              console.log(error);
-            });
-        },
+            console.log(error);
+         });
+        }
+   },
         getArticles()
         {
             axios
