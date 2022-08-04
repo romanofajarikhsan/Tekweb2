@@ -12,7 +12,7 @@ Vue.createApp({
         getHeaderData()
         {
           axios
-            .get(apiUrl+"users/1")
+            .get(apiUrl+""https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/header.json"")
             .then((res) => {              
               this.header = res.data;
               this.getArticles();
@@ -25,7 +25,7 @@ Vue.createApp({
         {
             axios
             .get(
-              "https://raw.githubusercontent.com/faridsurya/Vue-Axios-Basic/master/contents/articles.json"
+              "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/articles.json"
             )
             .then((res) => {              
               this.articles = res.data;
