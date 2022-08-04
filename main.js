@@ -13,7 +13,7 @@ Vue.createApp({
     {
       axios
         .get(
-           "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/header.js"
+           "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/header.json
          )
          .then((res) => {
           console.log(res.data); //melihat respon data pada console browser
@@ -28,7 +28,7 @@ Vue.createApp({
         {
             axios
             .get(
-              "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/articles.js"
+              "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/articles.json
             )
             .then((res) => {              
               this.articles = res.data;
