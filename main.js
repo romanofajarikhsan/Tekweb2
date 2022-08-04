@@ -9,26 +9,23 @@ Vue.createApp({
       };
     },
     methods:{    
-       getHeaderData()
-    {
-      axios
-        .get(
-           "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/header.json"
-         )
-         .then((res) => {
-          console.log(res.data); //melihat respon data pada console browser
-          this.header = res.data;
-         })
+        getHeaderData()
+        {
+          axios
+            .get(apiUrl+"users/1")
+            .then((res) => {              
+              this.header = res.data;
+              this.getArticles();
+            })
             .catch((error) => {
-            console.log(error);
-         });
-        }
-   },
+              console.log(error);
+            });
+        },
         getArticles()
         {
             axios
             .get(
-              "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/blob/main/content/articles.json"
+              "https://raw.githubusercontent.com/faridsurya/Vue-Axios-Basic/master/contents/articles.json"
             )
             .then((res) => {              
               this.articles = res.data;
