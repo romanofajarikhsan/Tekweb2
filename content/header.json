@@ -1,19 +1,21 @@
 {
-  "title": "Hello",
+  "title": "Farid Surya",
+  "description":
+    "Ini adalah tempat saya untuk berbagi segala pengetahuan yang saya peroleh tentang koding dan teknologi.",
   "social": {
     "ig": {
       "url": "https://instagram.com/fareedsurya",
-      "title": "ig"
+      "title": "fareedsurya"
     },
     "fb": {
       "url": "https://web.facebook.com/fareed.frenologica/",
-      "title": "github"
+      "title": "Farid Suryanto"
     },
     "yt": {
       "url": "https://www.youtube.com/channel/UC8GBH6hewlRM1q252mSMyXg",
-      "title": "youtube"
+      "title": "Farid Surya"
     }
   },
   "imageProfile":
-    "url(./images/ayrtonsenna-removebg-preview.png);" 
+    "url(./image/Romano.png);"
 }
