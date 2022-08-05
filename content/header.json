@@ -17,5 +17,5 @@
     }
   },
   "imageProfile":
-    "https://raw.githubusercontent.com/romanofajarikhsan/Tekweb2/main/images/Romano.png"
+    "url(./image/Romano.png);"
 }
